@@ -104,6 +104,7 @@ public class FingerprintSimilarityComputer {
 		final MapRank mapRank = new MapRankInteger(offset_Score_Table, false);
 		int newScore = 0;
 		// get the most similar positions and scores
+		@SuppressWarnings("unchecked")
 		final List<Integer> orderedKeyList = mapRank.getOrderedKeyList(60, true);
 		final Iterator<Integer> orderedKeyListIterator = orderedKeyList.iterator();
 
